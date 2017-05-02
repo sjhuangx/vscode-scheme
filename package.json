@@ -1,0 +1,62 @@
+{
+    "name": "vscode-scheme",
+    "displayName": "vscode-scheme",
+    "description": "Scheme language support for VSCode",
+    "keywords": [
+        "scheme",
+        "syntax"
+    ],
+    "version": "0.1.0",
+    "publisher": "sjhuangx",
+    "icon": "images/lambda.png",
+    "main": "./out/src/schemeMain",
+    "license": "MIT",
+    "author": {
+        "name": "Allen Huang"
+    },
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "categories": [
+        "Languages",
+        "Snippets"
+    ],
+    "activationEvents": [
+        "onLanguage:scheme"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sjhuangx/vscode-scheme.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sjhuangx/vscode-scheme/issues"
+    },
+    "homepage": "https://github.com/sjhuangx/vscode-scheme",
+    "contributes": {
+        "languages": [{
+            "id": "scheme",
+            "aliases": ["Scheme", "scheme"],
+            "extensions": [".scm", ".ss", ".sch", "rkt"],
+            "configuration": "./scheme.configuration.json"
+        }],
+        "grammars": [{
+            "language": "scheme",
+            "scopeName": "source.scheme",
+            "path": "./syntaxes/scheme.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "scheme",
+            "path": "./snippets/scheme.json"
+        }]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "build": "vsce package"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "vsce": "^1.20.0"
+    }
+}
