@@ -6,7 +6,7 @@
         "scheme",
         "syntax"
     ],
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "sjhuangx",
     "icon": "images/lambda.png",
     "main": "./out/src/schemeMain",
@@ -33,21 +33,35 @@
     },
     "homepage": "https://github.com/sjhuangx/vscode-scheme",
     "contributes": {
-        "languages": [{
-            "id": "scheme",
-            "aliases": ["Scheme", "scheme"],
-            "extensions": [".scm", ".ss", ".sch", "rkt"],
-            "configuration": "./scheme.configuration.json"
-        }],
-        "grammars": [{
-            "language": "scheme",
-            "scopeName": "source.scheme",
-            "path": "./syntaxes/scheme.tmLanguage"
-        }],
-        "snippets": [{
-            "language": "scheme",
-            "path": "./snippets/scheme.json"
-        }]
+        "languages": [
+            {
+                "id": "scheme",
+                "aliases": [
+                    "Scheme",
+                    "scheme"
+                ],
+                "extensions": [
+                    ".scm",
+                    ".ss",
+                    ".sch",
+                    "rkt"
+                ],
+                "configuration": "./scheme.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "scheme",
+                "scopeName": "source.scheme",
+                "path": "./syntaxes/scheme.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "scheme",
+                "path": "./snippets/scheme.json"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
