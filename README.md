@@ -5,11 +5,11 @@ This extension add Scheme language support to VS Code.
 ## Features
 * Syntax Coloring
 
-![](https://github.com/sjhuangx/vscode-scheme/blob/master/images/syntax.png)
+![](https://raw.githubusercontent.com/sjhuangx/vscode-scheme/master/images/syntax.png)
 
 * Snippets
 
-![](https://github.com/sjhuangx/vscode-scheme/blob/master/images/snippets.gif)
+![](https://raw.githubusercontent.com/sjhuangx/vscode-scheme/master/images/snippets.gif)
 
 support following snippets: cond, define, if, lambda, let, let1, set!.
 
