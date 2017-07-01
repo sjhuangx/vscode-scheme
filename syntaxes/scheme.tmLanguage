@@ -219,7 +219,7 @@
 						( append|apply|approximate|
 						  call-with-current-continuation|call/cc|catch|
 						  construct-identifier|define-syntax|display|foo|
-						  for-each|force|cd|gen-counter|gen-loser|
+						  for-each|force|format|cd|gen-counter|gen-loser|
 						  generate-identifier|last-pair|length|let-syntax|
 						  letrec-syntax|list|list-ref|list-tail|load|log|
 						  macro|magnitude|map|map-streams|max|member|memq|

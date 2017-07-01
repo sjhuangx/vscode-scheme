@@ -6,7 +6,7 @@
         "scheme",
         "syntax"
     ],
-    "version": "0.2.1",
+    "version": "0.3.0",
     "publisher": "sjhuangx",
     "icon": "images/lambda.png",
     "main": "./out/src/schemeMain",
@@ -44,7 +44,7 @@
                     ".scm",
                     ".ss",
                     ".sch",
-                    "rkt"
+                    ".rkt"
                 ],
                 "configuration": "./scheme.configuration.json"
             }
