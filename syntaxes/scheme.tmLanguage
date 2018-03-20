@@ -41,6 +41,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#block-comment</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#sexp</string>
 		</dict>
 		<dict>
@@ -93,6 +97,26 @@
 					<string>\n</string>
 					<key>name</key>
 					<string>comment.line.semicolon.scheme</string>
+				</dict>
+			</array>
+		</dict>
+		<key>block-comment</key>
+		<dict>
+			<key>begin</key>
+			<string>\#\|</string>
+			<key>contentName</key>
+			<string>comment</string>
+			<key>end</key>
+			<string>\|\#</string>
+			<key>name</key>
+			<string>comment</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#block-comment</string>
+					<key>name</key>
+					<string>comment</string>
 				</dict>
 			</array>
 		</dict>
