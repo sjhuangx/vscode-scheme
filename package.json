@@ -54,6 +54,13 @@
                 "language": "scheme",
                 "scopeName": "source.scheme",
                 "path": "./syntaxes/scheme.tmLanguage"
+            },
+            {
+                "scopeName": "markdown.scheme.codeblock",
+                "path": "./syntaxes/scheme.markdown.tmLanguage.json",
+                "injectTo": [
+                    "text.html.markdown"
+                ]
             }
         ],
         "snippets": [
