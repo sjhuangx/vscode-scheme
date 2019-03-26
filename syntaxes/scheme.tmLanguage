@@ -379,7 +379,7 @@
 		<key>quote-sexp</key>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;=\()\s*(quote)\b\s*</string>
+			<string>(?&lt;=\()\s*(quote)\s+</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
