@@ -2,31 +2,49 @@
     "co": {
         "description": "[co]ndition",
         "prefix": "co",
-        "body": "(cond (${1:predicate1} ${2:consequent1})\n\t(${3:predicate2} ${4:consequent2}))"
+        "body": [
+            "(cond (${1:predicate1} ${2:consequent1})",
+            "\t(${3:predicate2} ${4:consequent2})",
+            "\t$0)"
+        ]
     },
     "de": {
         "description": "[de]fine",
         "prefix": "de",
-        "body": "(define (${1:name} ${2:parameters})\n\t$0)"
+        "body": [
+            "(define (${1:name} ${2:parameters})",
+            "\t$0)"
+        ]
     },
     "if": {
         "description": "[if]",
         "prefix": "if",
-        "body": "(if (${1:predicate})\n\t${2:consequent}\n\t${3:alternatives})"
+        "body": [
+            "(if (${1:predicate})",
+            "\t${2:consequent}",
+            "\t${3:alternatives}$0)"
+        ]
     },
     "la": {
         "description": "[la]mbda",
         "prefix": "la",
-        "body": "(lambda (${1:parameters}) ${2:commands})"
+        "body": [
+            "(lambda (${1:parameters}) ${2:commands}$0)"
+        ]
     },
     "le": {
         "description": "[le]t",
         "prefix": "le",
-        "body": "(let ((${1:variable} ${value}))\n\t(${3:commands}))"
+        "body": [
+            "(let ((${1:variable} ${value}))",
+            "\t${3:commands}$0)"
+        ]
     },
     "se": {
         "description": "[se]t!",
         "prefix": "se",
-        "body": "(set! ${1:variable} ${2:value})"
+        "body": [
+            "(set! ${1:variable} ${2:value}$0)"
+        ]
     }
 }
